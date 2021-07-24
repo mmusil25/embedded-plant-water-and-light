@@ -7,11 +7,11 @@ I wanted to spruce up my room and knew that I wanted techno-natural themed decor
 
 ## Results
 
-The video at this [YouTube link](https://youtu.be/FvzQ_0edmb4) shows the completed irrigation system automatically controlling the watering system as the moisture sensor is removed from the soil. This [YouTube video](https://youtu.be/sns0XTtDSVc) shows the light being turned on and off by the microcontroller. The picture below shows the completed system. 
+The video at this [YouTube link](https://youtu.be/FvzQ_0edmb4) shows the completed irrigation system automatically controlling the watering system as the moisture sensor is removed from the soil. This [YouTube video](https://youtu.be/sns0XTtDSVc) shows the light being turned on and off by the microcontroller. These videos are also available in this repository under the media directory.  The picture below shows the completed system. 
 
 
 
-![irrigation](./lights.jpg)
+![irrigation](./media/lights.jpg)
 
 ## **Methods**
 
@@ -25,17 +25,17 @@ My full parts list (for lighting and irrigation) can be found on my [costs sprea
 
 Although the DC 5V source was not included in the irrigation kit, I thankfully came across an [AC -> DC 5V converter](https://www.amazon.com/gp/product/B07GL9YB3Z/ref=ox_sc_act_title_1?smid=A2DYIB4IPW7T3M&psc=1) which includes a +/- screw-down terminator allowing me to use my breadboard wires to power the project with ease. The following pictures shows the major components of the irrigation system. 
 
-![The supplies used in this project](./parts_1_30.jpg)
+![The supplies used in this project](./media/parts_1_30.jpg)
 
 
 
 The following wiring diagram shows how the different parts of the irrigation subsystem are interconnected. Note that this wiring diagram was inspired by the guide provided by the irrigation kit seller but is my own original work. 
 
-![](./diagram.png)
+![](./media/diagram.png)
 
 The original code for the project was also provided by the seller of the irrigation kit. However, I have reworked the code and calibrated it to nurture an *Invicible Plaintain Lily* and have added more features such as lighting control and changed the variable names to be more easily read and debugged. Find the code [here](./driver/driver.ino). Here's a photo of the plant with the irrigation system installed. 
 
-![irrigation](./irrigation_30.jpg)
+![irrigation](./media/irrigation_30.jpg)
 
 I had to calibrate the capacitive sensor to ensure that the plant did not experience over-watering which can result in root-rot. I settled on a capacitive sensor value of 550 and placed the sensor relatively close to the irrigation hose. This made sure that the plant only received small amounts of water. Since my room is cool evapotranspiration is not drawing much water out of the plant. 
 
