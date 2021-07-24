@@ -47,14 +47,16 @@ So I decided to take the approach of turning on and off a lamp in my room using 
 
 The [Arduino Time Library](https://playground.arduino.cc/Code/Time/) provided the functionality needed to control the timing for the plant lighting. Timing control was implemented by keeping track of the seconds passed since the program had begun. This value was used in a logical operation with the modulo operator to determine whether or not the current second was within the first three hours of the 24 hour cycle.
 
-`thisMoment = now();`
+```c
+thisMoment = now();
 
-`if ((thisMoment % secondsInADay) < secondsInThreeHours){
+if ((thisMoment % secondsInADay) < secondsInThreeHours){
   //turn on the light
   Serial.print("Time for light! \n");
   digitalWrite(lightControl, LOW);}
 else {
   Serial.print("Lights out! \n");
   digitalWrite(lightControl, HIGH);
-}`
+}
+```
 
