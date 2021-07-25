@@ -43,7 +43,7 @@ Serial.print("Capacitive sensor reading:");
 myDryness = analogRead(CapacitiveMoistureSensor);
 Serial.println(myDryness);
 
-  if(myDryness>550) {
+  if(myDryness>650) {
     Serial.print("Your plant is dry, activating pump.");
     digitalWrite(pumpControl, LOW);}
   else {
